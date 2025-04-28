@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>传送门</title>
+    <style>
+        .box{
+            /* 想用于实现居中的但没实现，恼 */
+            background-color: hotpink;
+        }
+        fieldset legend{
+            background-color: hotpink;
+            font-family: "楷体";
+            color: #fff;
+        }
+        fieldset{
+            background-color: aliceblue;
+        }
+        textarea{
+            width: 230px;
+            height: 16px;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="" method="post">
+            <fieldset>
+                <legend>传送门</legend>
+                <label for="one"> 账号：</label><input type="text" id="one" name="user" placeholder="名字填填" required/><br />
+                密码：<input type="password" name="pws" placeholder="暗号写写" required/><br />
+                电话：<input type="number" name="tel" placeholder="数字输输"/><br />
+                角色：<input type="radio" name="character"/>柴柴
+                <input type="radio" name="character"/>周周<br />
+                心情：
+                <input type="checkbox" name="emotion" checked/>开心
+                <input type="checkbox" name="emotion"/>还好
+                <input type="checkbox" name="emotion"/>emo
+                <input type="checkbox" name="emotion"/>未知
+                <br />
+                喜欢的颜色：<input type="color" name="color"/><br />
+                归属地：
+                <select name="city">
+                    <option value="cd">成都</option>
+                    <option value="xa">西安</option>
+                    <option value="my" selected>绵阳</option>
+                    <option value="nb">宁波</option>
+                </select>
+                <br />
+                邮箱：<input type="email" name="email"/><br />
+                上传照片：<input type="file" name="picture"/><br />
+                穿越时间至：<input type="date" name="time"/><br />
+                <hr>
+                我还想说：<textarea rows="5" cols="20">打扁周周pp，建立柴柴帝国</textarea><br />
+                <br />
+                <input type="reset" name="res" value="哎哟想清空">&nbsp;&nbsp;&nbsp;
+                <input type="submit" name="sub" value="着陆">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
